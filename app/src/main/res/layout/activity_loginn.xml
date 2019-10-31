@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginnActivity"
+    android:orientation="vertical"
+    android:background="#FFFFFFCC">
+
+    <EditText
+        android:id="@+id/username"
+        android:hint="Username"
+        android:textSize="25dp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="200dp"/>
+
+
+    <EditText
+        android:layout_below="@id/username"
+        android:id="@+id/password"
+        android:hint="Password"
+        android:textSize="25dp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"/>
+
+    <LinearLayout
+        android:id="@+id/reglog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password"
+        android:orientation="horizontal"
+        >
+        <Button
+            android:id="@+id/login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LOGIN"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="40dp"
+            android:background="#FF993300"
+            android:textColor="	#FFFFFFFF"
+            />
+        <Button
+            android:id="@+id/regis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="REGISTRASI"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="100dp"
+            android:background="#FF993300"
+            android:textColor="	#FFFFFFFF"
+
+            />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/forgot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FORGOT"
+        android:layout_below="@id/reglog"
+        android:layout_centerInParent="true"
+        android:background="#FF993300"
+        android:textColor="	#FFFFFFFF"
+
+        />
+
+
+</RelativeLayout>
